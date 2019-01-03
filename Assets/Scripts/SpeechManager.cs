@@ -56,7 +56,7 @@ public class SpeechManager : MonoBehaviour {
 
     [Tooltip("Connection string to Azure Storage account.")]
     [SecretValue("SpeechService_APIKey")]
-    public string SpeechServiceAPIKey = string.Empty;
+    public string SpeechServiceAPIKey = "c60fe972a72a44ff85c5966bf60e36e5";
 
     [Tooltip("Whether or not the Speech Manager should trigger the end of dictation through the use of silence detection, which is confirgurable via the the Silence Treshold and Silence Timeout settings below. Service-side silence detection is enabled by default.")]
     public bool UseClientSideSilenceDetection = false;
@@ -155,7 +155,7 @@ public class SpeechManager : MonoBehaviour {
 
             // Make sure to match the region to the Azure region where you created the service.
             // Note the region is NOT used for the old Bing Speech service
-            region = "westus";
+            region = "northeurope";
 
             auth = new CogSvcSocketAuthentication();
             Task<string> authenticating = auth.Authenticate(authenticationKey, region, useClassicBingSpeechService);
