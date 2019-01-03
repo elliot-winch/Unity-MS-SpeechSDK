@@ -1226,6 +1226,7 @@ GameObject:
   - component: {fileID: 1676433672}
   - component: {fileID: 1676433671}
   - component: {fileID: 1676433670}
+  - component: {fileID: 1676433673}
   m_Layer: 0
   m_Name: SpeechManager
   m_TagString: Untagged
@@ -1263,6 +1264,7 @@ MonoBehaviour:
   UseClientSideSilenceDetection: 0
   SilenceThreshold: 0.002
   SilenceTimeout: 3
+  useNewCognitiveAPI: 1
 --- !u!82 &1676433671
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1369,6 +1371,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51875d3910262b7418075bd7ed0bc37c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1676433673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676433668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f25d99017db7c448cbea77e9bf46a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1836181827
